@@ -63,18 +63,18 @@ language: en
             return papersList;
         };
         this.generatePaperEntry = (paper, language) => {
-            let mdPaper = "1. " + `**${paper.title}**`;
+            let mdPaper = "1. " + `**${paper.title}**.`;
             if (paper.journalType && paper.journal) {
-                mdPaper = mdPaper + `\n ${paper.date} - *${paper.journal}*  (${paper.journalType})`;
+                mdPaper = mdPaper + ` ${paper.date} - *${paper.journal}*  (${paper.journalType}).`;
             }
             else {
-                mdPaper = mdPaper + `\n ${paper.date} - *${paper.journal}*`;
+                mdPaper = mdPaper + ` ${paper.date} - *${paper.journal}*`;
             }
             if (paper.doi) {
-                mdPaper = mdPaper + `\n *[${paper.doi}](${paper.doi})*`;
+                mdPaper = mdPaper + ` *[${paper.doi}](${paper.doi}).*`;
             }
             if (paper.url) {
-                mdPaper = mdPaper + `\n *[${paper.url}](${paper.url})*`;
+                mdPaper = mdPaper + ` *[${paper.url}](${paper.url}).*`;
             }
             return mdPaper;
         };
