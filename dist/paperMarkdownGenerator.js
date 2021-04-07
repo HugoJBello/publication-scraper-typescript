@@ -6,35 +6,32 @@ class PaperMarkdownGenerator {
         this.titleEs = "Artículos";
         this.titleEn = "Research Papers";
         this.date = (new Date()).toISOString();
-        this.headMarkDownEs = `
----
+        this.headMarkDownEs = `---
 title: "${this.titleEs}"
 date: ${this.date}
-translationKey: Research Papers
 tags: ["Research", "Papers"]
-toc: true
-menu:
-    main: {}
+description: mis artículos publicados y preprints
+language: es
 ---
 
 
     `;
-        this.headMarkDownEn = `
----
+        this.headMarkDownEn = `---
 title: "${this.titleEn}"
 date: ${this.date}
 translationKey: Research Papers
 tags: ["Research", "Papers"]
-toc: true
-menu:
-    main: {}
+description: my published research papers and my preprints
+language: en
 ---
 
 
     `;
-        this.generateMarkdown = (papers, preprints) => {
-            const papersInSpanish = this.generateMarkdownLang(papers, preprints, "es");
-            const papersInEnglish = this.generateMarkdownLang(papers, preprints, "en");
+        this.generateMarkdown = (papers) => {
+            const preprints = papers.filter((paper) => paper.workType === "preprint");
+            const published = papers.filter((paper) => paper.workType === "journal-article");
+            const papersInSpanish = this.generateMarkdownLang(published, preprints, "es");
+            const papersInEnglish = this.generateMarkdownLang(published, preprints, "en");
             return { spanishVersion: papersInSpanish, englishVersion: papersInEnglish };
         };
         this.generateMarkdownLang = (publishedPapers, publishedPreprints, language) => {
@@ -52,11 +49,11 @@ menu:
                 papersList = papersList + "\n\n" + mdPaper;
             }
             if (language === "es") {
-                const publishedPapersSectionHeadEs = "## Preprints de Artículos";
+                const publishedPapersSectionHeadEs = "\n\n## Preprints de Artículos";
                 papersList = papersList + "\n" + publishedPapersSectionHeadEs;
             }
             else {
-                const publishedPapersSectionHeadEn = "## Preprints";
+                const publishedPapersSectionHeadEn = "\n\n## Preprints";
                 papersList = papersList + "\n" + publishedPapersSectionHeadEn;
             }
             for (const paper of publishedPreprints) {
@@ -67,7 +64,7 @@ menu:
         };
         this.generatePaperEntry = (paper, language) => {
             let mdPaper = "1. " + `**${paper.title}**`;
-            if (paper.journalType) {
+            if (paper.journalType && paper.journal) {
                 mdPaper = mdPaper + `\n ${paper.date} - *${paper.journal}*  (${paper.journalType})`;
             }
             else {

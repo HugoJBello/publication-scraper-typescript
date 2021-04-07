@@ -1,4 +1,4 @@
-import {ExtractedPaper} from "./orcidScraper";
+import {ExtractedPaper} from "./orcidScraperApi";
 
 export class PaperMarkdownGenerator {
     public titleEs = "Artículos"
@@ -6,37 +6,33 @@ export class PaperMarkdownGenerator {
 
     public date = (new Date()).toISOString()
 
-    public headMarkDownEs = `
----
+    public headMarkDownEs = `---
 title: "${this.titleEs}"
 date: ${this.date}
-translationKey: Research Papers
 tags: ["Research", "Papers"]
-toc: true
-menu:
-    main: {}
+description: mis artículos publicados y preprints
+language: es
 ---
 
 
     `
 
-    public headMarkDownEn = `
----
+    public headMarkDownEn = `---
 title: "${this.titleEn}"
 date: ${this.date}
 translationKey: Research Papers
 tags: ["Research", "Papers"]
-toc: true
-menu:
-    main: {}
+description: my published research papers and my preprints
+language: en
 ---
 
 
     `
-    public generateMarkdown = (papers: ExtractedPaper[], preprints: ExtractedPaper[]) => {
-
-        const papersInSpanish = this.generateMarkdownLang(papers, preprints, "es")
-        const papersInEnglish = this.generateMarkdownLang(papers, preprints, "en")
+    public generateMarkdown = (papers: ExtractedPaper[]) => {
+        const preprints = papers.filter((paper:ExtractedPaper) => paper.workType === "preprint")
+        const published = papers.filter((paper:ExtractedPaper) => paper.workType === "journal-article")
+        const papersInSpanish = this.generateMarkdownLang(published, preprints, "es")
+        const papersInEnglish = this.generateMarkdownLang(published, preprints, "en")
 
         return {spanishVersion: papersInSpanish, englishVersion:papersInEnglish}
 
@@ -61,10 +57,10 @@ menu:
         }
 
         if (language === "es") {
-            const publishedPapersSectionHeadEs = "## Preprints de Artículos"
+            const publishedPapersSectionHeadEs = "\n\n## Preprints de Artículos"
             papersList = papersList + "\n" + publishedPapersSectionHeadEs
         } else {
-            const publishedPapersSectionHeadEn = "## Preprints"
+            const publishedPapersSectionHeadEn = "\n\n## Preprints"
             papersList = papersList + "\n" + publishedPapersSectionHeadEn
         }
 
@@ -80,7 +76,7 @@ menu:
     private generatePaperEntry = (paper: ExtractedPaper, language:string) => {
         let mdPaper = "1. " + `**${paper.title}**`
 
-        if (paper.journalType) {
+        if (paper.journalType && paper.journal) {
             mdPaper = mdPaper + `\n ${paper.date} - *${paper.journal}*  (${paper.journalType})`
         } else {
             mdPaper = mdPaper + `\n ${paper.date} - *${paper.journal}*`
