@@ -18,7 +18,7 @@ export class OrcidScraper {
 
     public scrap = async (): Promise<ExtractedPaper[]> => {
 
-        const papers = [] as ExtractedPaper[]
+        let papers = [] as ExtractedPaper[]
 
         const result = await axios.get(this.url)
 
@@ -42,7 +42,8 @@ export class OrcidScraper {
 
             }
         }
-
+        papers = this.removeRepetitions(papers)
+        console.log(papers)
         return papers
 
     }
@@ -62,7 +63,7 @@ export class OrcidScraper {
             return paperCont.workExternalIdentifiers[0].url.value
 
         } catch (e) {
-            console.log("urls")
+            return ""
         }
 
     }
@@ -101,6 +102,20 @@ export class OrcidScraper {
         } catch (e) {
             //console.log(e)
         }
+
+    }
+
+    public removeRepetitions(extractedPapers: ExtractedPaper[]): ExtractedPaper[]{
+        const cleanList = []
+        for (const paper of extractedPapers) {
+            const doi = paper.doi
+            const title = paper.title.toLowerCase()
+            const found = cleanList.find(paper => paper.doi === doi && paper.title.toLowerCase() === title)
+            if (!found) {
+                cleanList.push(paper)
+            }
+        }
+        return cleanList
 
     }
 

@@ -18,7 +18,7 @@ class OrcidScraper {
     constructor() {
         this.url = "https://orcid.org/0000-0002-3687-1938/worksPage.json?offset=0&sort=date&sortAsc=false&pageSize=50";
         this.scrap = () => __awaiter(this, void 0, void 0, function* () {
-            const papers = [];
+            let papers = [];
             const result = yield axios_1.default.get(this.url);
             const groups = result.data.groups;
             for (const group of groups) {
@@ -38,6 +38,8 @@ class OrcidScraper {
                 catch (e) {
                 }
             }
+            papers = this.removeRepetitions(papers);
+            console.log(papers);
             return papers;
         });
         this.extractJournal = (paperCont) => {
@@ -52,7 +54,7 @@ class OrcidScraper {
                 return paperCont.workExternalIdentifiers[0].url.value;
             }
             catch (e) {
-                console.log("urls");
+                return "";
             }
         };
         this.extractTitle = (paperCont) => {
@@ -86,6 +88,18 @@ class OrcidScraper {
             }
         };
         //_ngcontent-xsk-c0
+    }
+    removeRepetitions(extractedPapers) {
+        const cleanList = [];
+        for (const paper of extractedPapers) {
+            const doi = paper.doi;
+            const title = paper.title.toLowerCase();
+            const found = cleanList.find(paper => paper.doi === doi && paper.title.toLowerCase() === title);
+            if (!found) {
+                cleanList.push(paper);
+            }
+        }
+        return cleanList;
     }
 }
 exports.OrcidScraper = OrcidScraper;

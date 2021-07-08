@@ -1,6 +1,6 @@
 ---
 title: "Artículos"
-date: 2021-04-07T17:41:52.674Z
+date: 2021-07-08T16:25:39.061Z
 tags: ["Research", "Papers"]
 description: mis artículos publicados y preprints
 language: es
@@ -10,9 +10,13 @@ language: es
     
 ## Artículos publicados
 
+1. **Effect of Glutamine Supplementation on Muscular Damage Biomarkers in Professional Basketball Players**. 2021 - *Nutrients*  (journal-article).
+
+1. **Diagnostic stability in Bipolar Disorder: A follow-up study in 130.000 patient-years**. 2021 - *The Journal of Clinical Psychiatry*  (journal-article).
+
 1. **Stress Salivary Biomarkers Answer During the Work Day in Emergencies  in Healthcare Professionals**. 2021 - *International Journal of Environmental Research and Public Health*  (journal-article).
 
-1. **Use of Ecological Momentary Assessment to study suicidal thoughts and behavior: A Systematic Review**. 2021 - *Current Psychiatry Reports*  (journal-article).
+1. **Use of Ecological Momentary Assessment to study suicidal thoughts and behavior: A Systematic Review**. 2021 - *Current Psychiatry Reports*  (journal-article). *[https://doi.org/10.1007/s11920-021-01255-7](https://doi.org/10.1007/s11920-021-01255-7).*
 
 1. **Early administration of aripiprazole long-acting injectable in acute inpatients with schizophrenia: a clinical report**. 2020 - *International Clinical Psychopharmacology*  (journal-article). *[https://doi.org/10.1097/yic.0000000000000345](https://doi.org/10.1097/yic.0000000000000345).*
 
@@ -40,7 +44,5 @@ language: es
 1. **Suicide Classificaction for News Media Using Convolutional Neural Network**. 2021 - *undefined* *[http://arxiv.org/abs/2103.03727v1](http://arxiv.org/abs/2103.03727v1).*
 
 1. **Machine Learning to study the impact of gender-based violence in the news media**. 2020 - *undefined* *[http://arxiv.org/abs/2012.07490v1](http://arxiv.org/abs/2012.07490v1).*
-
-1. **The Ext group in the categories of topological abelian groups and topological vector spaces**. 2016 - *undefined* *[http://arxiv.org/abs/1603.02091v1](http://arxiv.org/abs/1603.02091v1).*
 
 1. **Extensions of topological Abelian groups and three-space problems**. 2013 - *undefined* *[http://arxiv.org/abs/1305.4515v1](http://arxiv.org/abs/1305.4515v1).*
