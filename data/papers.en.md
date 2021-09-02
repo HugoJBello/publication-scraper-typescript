@@ -1,6 +1,6 @@
 ---
 title: "Research Papers"
-date: 2021-07-08T16:25:39.061Z
+date: 2021-09-02T12:12:28.790Z
 translationKey: Research Papers
 tags: ["Research", "Papers"]
 description: my published research papers and my preprints
@@ -10,6 +10,8 @@ language: en
 
     
 ## Published papers
+
+1. **Variations in salivary stress biomarkers and their relationship with  anxiety, self-efficacy and sleeping quality in emergency health care  professionals**. 2021 - *International Journal of Environmental Research and Public Health*  (journal-article).
 
 1. **Effect of Glutamine Supplementation on Muscular Damage Biomarkers in Professional Basketball Players**. 2021 - *Nutrients*  (journal-article).
 
