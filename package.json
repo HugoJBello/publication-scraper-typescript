@@ -20,11 +20,13 @@
   "homepage": "",
   "dependencies": {
     "@types/jest": "^25.1.5",
+    "@types/lodash": "^4.14.173",
     "@types/node": "^13.13.39",
     "@types/user-agents": "^1.0.0",
     "axios": "^0.21.1",
     "dotenv": "^7.0.0",
     "jest": "^24.9.0",
+    "lodash": "^4.17.21",
     "puppeteer-extra-plugin-block-resources": "^2.2.8",
     "puppeteer-extra-plugin-stealth": "^2.4.9",
     "ts-jest": "^24.1.0",

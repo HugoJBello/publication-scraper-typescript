@@ -1,11 +1,11 @@
-import {OrcidScraper} from "./orcidScraperApi";
+import {OrcidGeneralScraper} from "./orcidGeneralScraperApi";
 import fs  from 'fs'
 import {PaperMarkdownGenerator} from "./paperMarkdownGenerator";
 (async () => {
 
     console.log("-----")
 
-    const orcidScraper = new OrcidScraper()
+    const orcidScraper = new OrcidGeneralScraper()
     const papers = await orcidScraper.scrap()
 
     fs.writeFileSync("data/papers_orcid.json", JSON.stringify(papers))

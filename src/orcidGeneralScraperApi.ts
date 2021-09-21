@@ -1,8 +1,11 @@
 import axios from "axios";
+import {OrcidWorkScraper} from "./orcidWorkScraperApi";
+import {get} from "lodash"
 
 export interface ExtractedPaper {
     title?: string,
     journal?: string,
+    authors?: string,
     doi?: string,
     journalType?: string,
     workType?: string,
@@ -12,9 +15,9 @@ export interface ExtractedPaper {
     pdfPreprint?: string
 }
 
-export class OrcidScraper {
+export class OrcidGeneralScraper {
     public url = "https://orcid.org/0000-0002-3687-1938/worksPage.json?offset=0&sort=date&sortAsc=false&pageSize=50"
-
+    public orcidWorkScraper = new OrcidWorkScraper()
 
     public scrap = async (): Promise<ExtractedPaper[]> => {
 
@@ -27,15 +30,23 @@ export class OrcidScraper {
         for (const group of groups) {
             try {
                 for (const paper of group.works) {
-                    console.log(paper)
-                    const title =  this.extractTitle(paper)
-                    const journal =  this.extractJournal(paper)
-                    const doi =  this.extractUrls(paper)
-                    const workType =  this.extractWorkType(paper)
-                    const date =  this.extractDate(paper)
-                    console.log("\n")
+                    const title = this.extractTitle(paper)
+                    const journal = this.extractJournal(paper)
+                    const doi = this.extractUrls(paper)
+                    const workType = this.extractWorkType(paper)
+                    const date = this.extractDate(paper)
+                    const workId = this.extractWorkId(paper)
+                    const workDetails = await this.orcidWorkScraper.scrap(workId)
 
-                    const extractedPaper: ExtractedPaper = {title, journal, doi, date, journalType:workType, workType} as ExtractedPaper
+                    const extractedPaper: ExtractedPaper = {
+                        title,
+                        authors:workDetails.authors,
+                        journal,
+                        doi,
+                        date,
+                        journalType: workType,
+                        workType
+                    } as ExtractedPaper
                     papers.push(extractedPaper)
                 }
             } catch (e) {
@@ -43,13 +54,12 @@ export class OrcidScraper {
             }
         }
         papers = this.removeRepetitions(papers)
-        console.log(papers)
         return papers
 
     }
 
 
-    public extractJournal =  (paperCont: any) => {
+    public extractJournal = (paperCont: any) => {
         try {
             return paperCont.journalTitle.value
         } catch (e) {
@@ -57,8 +67,17 @@ export class OrcidScraper {
         }
 
     }
+    public extractWorkId = (paperCont: any) => {
+        try {
+            return get(paperCont, "putCode.value")
+        } catch (e) {
 
-    public extractUrls =  (paperCont: any) => {
+        }
+
+    }
+
+
+    public extractUrls = (paperCont: any) => {
         try {
             return paperCont.workExternalIdentifiers[0].url.value
 
@@ -68,7 +87,7 @@ export class OrcidScraper {
 
     }
 
-    public extractTitle =  (paperCont: any) => {
+    public extractTitle = (paperCont: any) => {
         try {
             return paperCont.title.value
 
@@ -78,7 +97,7 @@ export class OrcidScraper {
 
     }
 
-    public extractWorkType =  (paperCont: any) => {
+    public extractWorkType = (paperCont: any) => {
         try {
             return paperCont.workType.value
         } catch (e) {
@@ -87,7 +106,7 @@ export class OrcidScraper {
 
     }
 
-    public extractDate =  (paperCont: any) => {
+    public extractDate = (paperCont: any) => {
         try {
             return paperCont.publicationDate.year
         } catch (e) {
@@ -96,7 +115,7 @@ export class OrcidScraper {
 
     }
 
-    public extractJournalType =  (paperCont: any) => {
+    public extractJournalType = (paperCont: any) => {
         try {
             return paperCont.publicationDate.value
         } catch (e) {
@@ -105,7 +124,7 @@ export class OrcidScraper {
 
     }
 
-    public removeRepetitions(extractedPapers: ExtractedPaper[]): ExtractedPaper[]{
+    public removeRepetitions(extractedPapers: ExtractedPaper[]): ExtractedPaper[] {
         const cleanList = []
         for (const paper of extractedPapers) {
             const doi = paper.doi

@@ -1,4 +1,4 @@
-import {ExtractedPaper} from "./orcidScraperApi";
+import {ExtractedPaper} from "./orcidGeneralScraperApi";
 
 export class PaperMarkdownGenerator {
     public titleEs = "Artículos"
@@ -76,8 +76,10 @@ language: en
     private generatePaperEntry = (paper: ExtractedPaper, language:string) => {
         let mdPaper = "1. " + `**${paper.title}**.`
 
+
+
         if (paper.journalType && paper.journal) {
-            mdPaper = mdPaper + ` ${paper.date} - *${paper.journal}*  (${paper.journalType}).`
+            mdPaper = mdPaper + ` ${paper.date} - *${paper.journal}*  (${paper.journalType})`
         } else {
             mdPaper = mdPaper + ` ${paper.date} - *${paper.journal}*`
         }
@@ -90,6 +92,12 @@ language: en
             mdPaper = mdPaper + ` *[${paper.url}](${paper.url}).*`
         }
 
+        if (paper.authors) {
+            console.log(paper.authors)
+            const authors = paper.authors.replace(/\n/g, '').replace(/"Authors:"/g, '');
+
+            mdPaper = mdPaper + ` <sup>${authors}</sup>`
+        }
         return mdPaper
 
     }

@@ -65,7 +65,7 @@ language: en
         this.generatePaperEntry = (paper, language) => {
             let mdPaper = "1. " + `**${paper.title}**.`;
             if (paper.journalType && paper.journal) {
-                mdPaper = mdPaper + ` ${paper.date} - *${paper.journal}*  (${paper.journalType}).`;
+                mdPaper = mdPaper + ` ${paper.date} - *${paper.journal}*  (${paper.journalType})`;
             }
             else {
                 mdPaper = mdPaper + ` ${paper.date} - *${paper.journal}*`;
@@ -75,6 +75,11 @@ language: en
             }
             if (paper.url) {
                 mdPaper = mdPaper + ` *[${paper.url}](${paper.url}).*`;
+            }
+            if (paper.authors) {
+                console.log(paper.authors);
+                const authors = paper.authors.replace(/\n/g, '').replace(/"Authors:"/g, '');
+                mdPaper = mdPaper + ` <sup>${authors}</sup>`;
             }
             return mdPaper;
         };
