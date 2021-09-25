@@ -94,7 +94,7 @@ language: en
 
         if (paper.authors) {
             console.log(paper.authors)
-            const authors = paper.authors.replace(/\n/g, '').replace(/"Authors:"/g, '');
+            const authors = paper.authors.replace(/\n/g, '').replace(/Authors:/g, '');
 
             mdPaper = mdPaper + ` <sup>${authors}</sup>`
         }

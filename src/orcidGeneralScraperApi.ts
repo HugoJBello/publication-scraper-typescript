@@ -125,7 +125,7 @@ export class OrcidGeneralScraper {
     }
 
     public removeRepetitions(extractedPapers: ExtractedPaper[]): ExtractedPaper[] {
-        const cleanList = []
+        const cleanList: ExtractedPaper[] = []
         for (const paper of extractedPapers) {
             const doi = paper.doi
             const title = paper.title.toLowerCase()
