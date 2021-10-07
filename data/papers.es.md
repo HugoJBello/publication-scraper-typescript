@@ -1,6 +1,6 @@
 ---
 title: "Artículos"
-date: 2021-10-07T11:46:29.142Z
+date: 2021-10-07T11:49:36.287Z
 tags: ["Research", "Papers"]
 description: mis artículos publicados y preprints
 language: es
