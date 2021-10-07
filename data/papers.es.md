@@ -1,6 +1,6 @@
 ---
 title: "Artículos"
-date: 2021-09-21T10:14:56.180Z
+date: 2021-10-07T11:28:59.200Z
 tags: ["Research", "Papers"]
 description: mis artículos publicados y preprints
 language: es
@@ -10,19 +10,21 @@ language: es
     
 ## Artículos publicados
 
-1. **L-Citrulline Supplementation and Exercise in the Management of Sarcopenia**. 2021 - *Nutrients*  (journal-article) <sup>Alberto Caballero-García, Jorge Pascual-Fernández , David César Noriega-González , Hugo J. Bello ,Antoni Pons-Biescas , Enrique Roche and Alfredo Córdova-Martínez</sup>
+1. **News Media and Suicide: Using Big Data Techniques to Assess the Long-Term Impact**. 2021 - *Psychiatry: Interpersonal and Biological Processes*  (journal-article) *[https://doi.org/10.1080/00332747.2021.1989934](https://doi.org/10.1080/00332747.2021.1989934).* <sup>Nora Palomar-Ciria, Hugo J. Bello, Celia Lozano, Fanny Cegla-Schvartzman, Marta Migoya-Borja, Enrique Baca-García</sup>
 
-1. **Variations in salivary stress biomarkers and their relationship with  anxiety, self-efficacy and sleeping quality in emergency health care  professionals**. 2021 - *International Journal of Environmental Research and Public Health*  (journal-article) <sup>Daniel Perez-Valdecantos, Alberto Caballero-García, Teodosia del Castillo-Sanz, Hugo Bello, Enrique Roche, Alba Roche, Alfredo Córdova</sup>
+1. **L-Citrulline Supplementation and Exercise in the Management of Sarcopenia**. 2021 - *Nutrients*  (journal-article) *[https://doi.org/10.3390/nu13093133](https://doi.org/10.3390/nu13093133).* <sup>Alberto Caballero-García, Jorge Pascual-Fernández , David César Noriega-González , Hugo J. Bello ,Antoni Pons-Biescas , Enrique Roche and Alfredo Córdova-Martínez</sup>
 
-1. **Effect of Glutamine Supplementation on Muscular Damage Biomarkers in Professional Basketball Players**. 2021 - *Nutrients*  (journal-article) <sup>Alfredo Córdova-Martínez, Alberto Caballero-García, Hugo J Bello, Daniel Pérez-Valdecantos, Enrique Roche</sup>
+1. **Variations in salivary stress biomarkers and their relationship with  anxiety, self-efficacy and sleeping quality in emergency health care  professionals**. 2021 - *International Journal of Environmental Research and Public Health*  (journal-article) *[https://doi.org/10.3390/ijerph18179277](https://doi.org/10.3390/ijerph18179277).* <sup>Daniel Perez-Valdecantos, Alberto Caballero-García, Teodosia del Castillo-Sanz, Hugo Bello, Enrique Roche, Alba Roche, Alfredo Córdova</sup>
 
-1. **Diagnostic stability in Bipolar Disorder: A follow-up study in 130.000 patient-years**. 2021 - *The Journal of Clinical Psychiatry*  (journal-article) <sup>Authors: Cegla-Schvartzman, Fanny ; Ovejero, Santiago; Lopez-Castroman, Jorge; Palomar-Ciria, Nora; Migoya-Borja, Marta ; Bello, Hugo J.; Martínez-Alés, Gonzalo; Baca-Garcia, Enrique</sup>
+1. **Effect of Glutamine Supplementation on Muscular Damage Biomarkers in Professional Basketball Players**. 2021 - *Nutrients*  (journal-article) *[https://doi.org/10.3390/nu13062073](https://doi.org/10.3390/nu13062073).* <sup>Alfredo Córdova-Martínez, Alberto Caballero-García, Hugo J Bello, Daniel Pérez-Valdecantos, Enrique Roche</sup>
 
-1. **Stress Salivary Biomarkers Answer During the Work Day in Emergencies  in Healthcare Professionals**. 2021 - *International Journal of Environmental Research and Public Health*  (journal-article) <sup>Alfredo Córdova *, Daniel Pérez-Valdecantos, Alberto Caballero-García, Teodosia Del Castillo Sanz, Hugo J Bello, Enrique Roche</sup>
+1. **Diagnostic stability in Bipolar Disorder: A follow-up study in 130.000 patient-years**. 2021 - *The Journal of Clinical Psychiatry*  (journal-article) *[https://doi.org/10.4088/jcp.20m13764](https://doi.org/10.4088/jcp.20m13764).* <sup>Authors: Cegla-Schvartzman, Fanny ; Ovejero, Santiago; Lopez-Castroman, Jorge; Palomar-Ciria, Nora; Migoya-Borja, Marta ; Bello, Hugo J.; Martínez-Alés, Gonzalo; Baca-Garcia, Enrique</sup>
+
+1. **Stress Salivary Biomarkers Answer During the Work Day in Emergencies  in Healthcare Professionals**. 2021 - *International Journal of Environmental Research and Public Health*  (journal-article) *[https://doi.org/10.3390/ijerph18083937](https://doi.org/10.3390/ijerph18083937).* <sup>Alfredo Córdova, Daniel Pérez-Valdecantos, Alberto Caballero-García, Teodosia Del Castillo Sanz, Hugo J Bello, Enrique Roche</sup>
 
 1. **Use of Ecological Momentary Assessment to study suicidal thoughts and behavior: A Systematic Review**. 2021 - *Current Psychiatry Reports*  (journal-article) *[https://doi.org/10.1007/s11920-021-01255-7](https://doi.org/10.1007/s11920-021-01255-7).* <sup>Authors:Alba Sedano-Capdevila; Alejandro Porras-Segovia; Hugo J. Bello; Enrique Baca-García; Maria Luisa Barrigon</sup>
 
-1. **Early administration of aripiprazole long-acting injectable in acute inpatients with schizophrenia: a clinical report**. 2020 - *International Clinical Psychopharmacology*  (journal-article) *[https://doi.org/10.1097/yic.0000000000000345](https://doi.org/10.1097/yic.0000000000000345).* <sup>Palomar-Ciria, Noraa; Migoya-Borja, Marta; Cegla-Schvartzman, Fanny; Ovejero, Santiago; Alvarez-Garcia, Raquel; Bello, Hugo J.; Baca-García, Enrique</sup>
+1. **Early administration of aripiprazole long-acting injectable in acute inpatients with schizophrenia: a clinical report**. 2020 - *International Clinical Psychopharmacology*  (journal-article) *[https://doi.org/10.1097/yic.0000000000000345](https://doi.org/10.1097/yic.0000000000000345).* <sup>Palomar-Ciria, Nora; Migoya-Borja, Marta; Cegla-Schvartzman, Fanny; Ovejero, Santiago; Alvarez-Garcia, Raquel; Bello, Hugo J.; Baca-García, Enrique</sup>
 
 1. **Superheroes, resilience and COVID-19**. 2020 - *Actualidad Médica*  (journal-article) <sup>Nora Palomar Ciria, Hugo J. Bello</sup>
 
@@ -38,7 +40,7 @@ language: es
 
 1. **Splittings and cross-sections in topological groups**. 2016 - *Journal of Mathematical Analysis and Applications*  (journal-article) *[https://doi.org/10.1016/j.jmaa.2015.11.040](https://doi.org/10.1016/j.jmaa.2015.11.040).* <sup>H.J.Bello, M.J.Chasco, X.Domínguez, M.Tkachenko</sup>
 
-1. **Valoración forense del riesgo psicológico inicial en v́ıctimas de violencia de género**. 2016 - *Cuadernos de Medicina Forense*  (journal-article) <sup>N. Palomar-Ciria, AN. Fernández-Rodríguez,  MS. Rodríguez-Albarrán, JD. Casas, HJ. Bello</sup>
+1. **Valoración forense del riesgo psicológico inicial en v́ıctimas de violencia de género**. 2016 - *Cuadernos de Medicina Forense*  (journal-article) *[https://portal.issn.org/resource/ISSN/1135-7606](https://portal.issn.org/resource/ISSN/1135-7606).* <sup>N. Palomar-Ciria, AN. Fernández-Rodríguez,  MS. Rodríguez-Albarrán, JD. Casas, HJ. Bello</sup>
 
 1. **Extending Topological Abelian Groups by the Unit Circle**. 2013 - *Abstract and Applied Analysis*  (journal-article) *[https://doi.org/10.1155/2013/590159](https://doi.org/10.1155/2013/590159).* <sup>Hugo J. Bello , María Jesús Chasco, and Xabier Domínguez</sup>
 
