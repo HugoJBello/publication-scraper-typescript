@@ -1,6 +1,10 @@
 ---
 title: "Research Papers"
+<<<<<<< HEAD
 date: 2021-10-07T11:49:36.287Z
+=======
+date: 2021-09-25T09:01:52.686Z
+>>>>>>> 969c53a647c985f869ce1bf7e13ec61da7986063
 translationKey: Research Papers
 tags: ["Research", "Papers"]
 description: my published research papers and my preprints
@@ -11,6 +15,7 @@ language: en
     
 ## Published papers
 
+<<<<<<< HEAD
 1. **News Media and Suicide: Using Big Data Techniques to Assess the Long-Term Impact**. 2021 - *Psychiatry: Interpersonal and Biological Processes*  (journal-article) *[https://doi.org/10.1080/00332747.2021.1989934](https://doi.org/10.1080/00332747.2021.1989934).* <sup>Nora Palomar-Ciria, Hugo J. Bello, Celia Lozano, Fanny Cegla-Schvartzman, Marta Migoya-Borja, Enrique Baca-García</sup>
 
 1. **L-Citrulline Supplementation and Exercise in the Management of Sarcopenia**. 2021 - *Nutrients*  (journal-article) *[https://doi.org/10.3390/nu13093133](https://doi.org/10.3390/nu13093133).* <sup>Alberto Caballero-García, Jorge Pascual-Fernández , David César Noriega-González , Hugo J. Bello ,Antoni Pons-Biescas , Enrique Roche and Alfredo Córdova-Martínez</sup>
@@ -22,8 +27,19 @@ language: en
 1. **Diagnostic stability in Bipolar Disorder: A follow-up study in 130.000 patient-years**. 2021 - *The Journal of Clinical Psychiatry*  (journal-article) *[https://doi.org/10.4088/jcp.20m13764](https://doi.org/10.4088/jcp.20m13764).* <sup>Authors: Cegla-Schvartzman, Fanny ; Ovejero, Santiago; Lopez-Castroman, Jorge; Palomar-Ciria, Nora; Migoya-Borja, Marta ; Bello, Hugo J.; Martínez-Alés, Gonzalo; Baca-Garcia, Enrique</sup>
 
 1. **Stress Salivary Biomarkers Answer During the Work Day in Emergencies  in Healthcare Professionals**. 2021 - *International Journal of Environmental Research and Public Health*  (journal-article) *[https://doi.org/10.3390/ijerph18083937](https://doi.org/10.3390/ijerph18083937).* <sup>Alfredo Córdova, Daniel Pérez-Valdecantos, Alberto Caballero-García, Teodosia Del Castillo Sanz, Hugo J Bello, Enrique Roche</sup>
+=======
+1. **L-Citrulline Supplementation and Exercise in the Management of Sarcopenia**. 2021 - *Nutrients*  (journal-article) *[https://doi.org/10.3390/nu13093133](https://doi.org/10.3390/nu13093133).* <sup>Alberto Caballero-García, Jorge Pascual-Fernández , David César Noriega-González , Hugo J. Bello ,Antoni Pons-Biescas , Enrique Roche and Alfredo Córdova-Martínez</sup>
 
-1. **Use of Ecological Momentary Assessment to study suicidal thoughts and behavior: A Systematic Review**. 2021 - *Current Psychiatry Reports*  (journal-article) *[https://doi.org/10.1007/s11920-021-01255-7](https://doi.org/10.1007/s11920-021-01255-7).* <sup>Authors:Alba Sedano-Capdevila; Alejandro Porras-Segovia; Hugo J. Bello; Enrique Baca-García; Maria Luisa Barrigon</sup>
+1. **Variations in salivary stress biomarkers and their relationship with  anxiety, self-efficacy and sleeping quality in emergency health care  professionals**. 2021 - *International Journal of Environmental Research and Public Health*  (journal-article) *[https://doi.org/10.3390/ijerph18179277](https://doi.org/10.3390/ijerph18179277).* <sup>Daniel Perez-Valdecantos, Alberto Caballero-García, Teodosia del Castillo-Sanz, Hugo Bello, Enrique Roche, Alba Roche, Alfredo Córdova</sup>
+
+1. **Effect of Glutamine Supplementation on Muscular Damage Biomarkers in Professional Basketball Players**. 2021 - *Nutrients*  (journal-article) *[https://doi.org/10.3390/nu13062073](https://doi.org/10.3390/nu13062073).* <sup>Alfredo Córdova-Martínez, Alberto Caballero-García, Hugo J Bello, Daniel Pérez-Valdecantos, Enrique Roche</sup>
+
+1. **Diagnostic stability in Bipolar Disorder: A follow-up study in 130.000 patient-years**. 2021 - *The Journal of Clinical Psychiatry*  (journal-article) *[https://doi.org/10.4088/jcp.20m13764](https://doi.org/10.4088/jcp.20m13764).* <sup> Cegla-Schvartzman, Fanny ; Ovejero, Santiago; Lopez-Castroman, Jorge; Palomar-Ciria, Nora; Migoya-Borja, Marta ; Bello, Hugo J.; Martínez-Alés, Gonzalo; Baca-Garcia, Enrique</sup>
+
+1. **Stress Salivary Biomarkers Answer During the Work Day in Emergencies  in Healthcare Professionals**. 2021 - *International Journal of Environmental Research and Public Health*  (journal-article) *[https://doi.org/10.3390/ijerph18083937](https://doi.org/10.3390/ijerph18083937).* <sup>Alfredo Córdova *, Daniel Pérez-Valdecantos, Alberto Caballero-García, Teodosia Del Castillo Sanz, Hugo J Bello, Enrique Roche</sup>
+>>>>>>> 969c53a647c985f869ce1bf7e13ec61da7986063
+
+1. **Use of Ecological Momentary Assessment to study suicidal thoughts and behavior: A Systematic Review**. 2021 - *Current Psychiatry Reports*  (journal-article) *[https://doi.org/10.1007/s11920-021-01255-7](https://doi.org/10.1007/s11920-021-01255-7).* <sup>Alba Sedano-Capdevila; Alejandro Porras-Segovia; Hugo J. Bello; Enrique Baca-García; Maria Luisa Barrigon</sup>
 
 1. **Early administration of aripiprazole long-acting injectable in acute inpatients with schizophrenia: a clinical report**. 2020 - *International Clinical Psychopharmacology*  (journal-article) *[https://doi.org/10.1097/yic.0000000000000345](https://doi.org/10.1097/yic.0000000000000345).* <sup>Palomar-Ciria, Nora; Migoya-Borja, Marta; Cegla-Schvartzman, Fanny; Ovejero, Santiago; Alvarez-Garcia, Raquel; Bello, Hugo J.; Baca-García, Enrique</sup>
 
@@ -52,4 +68,4 @@ language: en
 
 1. **Machine Learning to study the impact of gender-based violence in the news media**. 2020 - *undefined* *[http://arxiv.org/abs/2012.07490v1](http://arxiv.org/abs/2012.07490v1).* <sup>Hugo J. Bello, Nora Palomar, Elisa Gallego, Lourdes Jiménez Navascués, Celia Lozano</sup>
 
-1. **Extensions of topological Abelian groups and three-space problems**. 2013 - *undefined* *[http://arxiv.org/abs/1305.4515v1](http://arxiv.org/abs/1305.4515v1).* <sup>Authors:  Hugo J. Bello, María Jesús Chasco, Xabier Domínguez</sup>
+1. **Extensions of topological Abelian groups and three-space problems**. 2013 - *undefined* *[http://arxiv.org/abs/1305.4515v1](http://arxiv.org/abs/1305.4515v1).* <sup>  Hugo J. Bello, María Jesús Chasco, Xabier Domínguez</sup>
